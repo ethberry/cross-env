@@ -50,6 +50,9 @@
   "license": "MIT",
   "main": "src/index.js",
   "name": "@trejgun/cross-env",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/TrejGun/cross-env.git"
