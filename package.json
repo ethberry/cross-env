@@ -51,6 +51,7 @@
   "main": "src/index.js",
   "name": "@trejgun/cross-env",
   "publishConfig": {
+    "cache": "~/.npm",
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
