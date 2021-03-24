@@ -1,0 +1,8 @@
+{
+  "coverageDirectory": "../coverage",
+  "clearMocks": true,
+  "moduleFileExtensions": ["js", "jsx", "json"],
+  "rootDir": "./",
+  "testEnvironment": "node",
+  "testMatch": ["**/__tests__/**/*.+(js|jsx|ts|tsx)"]
+}

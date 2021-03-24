@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "@trejgun/eslint-config/presets/js",
+    "@trejgun/eslint-config/rules/jest"
+  ],
+  "root": true,
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "camelcase": [
+      "error",
+      {
+        "ignoreDestructuring": true
+      }
+    ]
+  }
+}

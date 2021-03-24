@@ -1,0 +1,11 @@
+node_modules
+coverage
+dist
+.opt-in
+.opt-out
+
+# Lock files
+yarn.lock
+package-lock.json
+
+.idea
