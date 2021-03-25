@@ -63,5 +63,5 @@
     "test": "jest --config jest.config.json",
     "test:update": "npm test -- --updateSnapshot --coverage"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
