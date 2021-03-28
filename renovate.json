@@ -1,6 +1,5 @@
 {
   "extends": ["github>trejgun/renovate-config", "group:allNonMajor"],
   "requiredStatusChecks": null,
-  "renovateFork": true,
   "baseBranches": ["master"]
 }
