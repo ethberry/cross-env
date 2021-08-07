@@ -1,5 +1,4 @@
 {
-  "extends": ["github>trejgun/renovate-config", "group:allNonMajor"],
-  "requiredStatusChecks": null,
+  "extends": ["github>gemunionstudio/renovate-config"],
   "baseBranches": ["master"]
 }

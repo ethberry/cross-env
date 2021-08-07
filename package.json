@@ -5,7 +5,7 @@
     "cross-env-shell": "src/bin/cross-env-shell.js"
   },
   "bugs": {
-    "url": "https://github.com/TrejGun/cross-env/issues"
+    "url": "https://github.com/GemunIonStudio/cross-env/issues"
   },
   "dependencies": {
     "cross-spawn": "7.0.3"
@@ -16,7 +16,7 @@
     "@babel/eslint-parser": "7.15.0",
     "@babel/eslint-plugin": "7.14.5",
     "@babel/preset-env": "7.15.0",
-    "@trejgun/eslint-config": "0.1.7",
+    "@gemunionstudio/eslint-config": "0.1.8",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-config-standard": "16.0.3",
@@ -41,7 +41,7 @@
     "src",
     "!__tests__"
   ],
-  "homepage": "https://github.com/TrejGun/cross-env#readme",
+  "homepage": "https://github.com/GemunIonStudio/cross-env#readme",
   "keywords": [
     "cross-environment",
     "environment variable",
@@ -49,14 +49,14 @@
   ],
   "license": "MIT",
   "main": "src/index.js",
-  "name": "@trejgun/cross-env",
+  "name": "@gemunionstudio/cross-env",
   "publishConfig": {
     "cache": "~/.npm",
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TrejGun/cross-env.git"
+    "url": "https://github.com/GemunIonStudio/cross-env.git"
   },
   "scripts": {
     "lint": "eslint . --fix",
