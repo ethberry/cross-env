@@ -51,7 +51,6 @@
   "main": "src/index.js",
   "name": "@gemunionstudio/cross-env",
   "publishConfig": {
-    "cache": "~/.npm",
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
