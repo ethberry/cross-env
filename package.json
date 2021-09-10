@@ -5,7 +5,7 @@
     "cross-env-shell": "src/bin/cross-env-shell.js"
   },
   "bugs": {
-    "url": "https://github.com/GemunIonStudio/cross-env/issues"
+    "url": "https://github.com/GemunIon/cross-env/issues"
   },
   "dependencies": {
     "cross-spawn": "7.0.3"
@@ -49,15 +49,15 @@
   ],
   "license": "MIT",
   "main": "src/index.js",
-  "name": "@gemunionstudio/cross-env",
+  "name": "@gemunion/cross-env",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GemunIonStudio/cross-env.git"
+    "url": "https://github.com/GemunIon/cross-env.git"
   },
   "scripts": {
     "lint": "eslint . --fix",
     "test": "jest --config jest.config.json",
     "test:update": "npm test -- --updateSnapshot --coverage"
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
