@@ -1,19 +1,12 @@
 {
   "extends": [
-    "@trejgun/eslint-config/presets/js",
-    "@trejgun/eslint-config/rules/jest"
+    "@gemunion/eslint-config/presets/js",
+    "@gemunion/eslint-config/rules/jest"
   ],
+  "parserOptions": {
+    "babelOptions": {
+      "configFile": "./.babelrc"
+    }
+  },
   "root": true,
-  "rules": {
-    "quotes": [
-      "error",
-      "double"
-    ],
-    "camelcase": [
-      "error",
-      {
-        "ignoreDestructuring": true
-      }
-    ]
-  }
 }
