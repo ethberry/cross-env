@@ -17,7 +17,7 @@
     "@babel/eslint-plugin": "7.19.1",
     "@babel/preset-env": "7.20.2",
     "@gemunion/eslint-config": "2.0.5",
-    "eslint": "8.32.0",
+    "eslint": "8.33.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-config-standard": "17.0.0",
     "eslint-plugin-import": "2.27.5",
