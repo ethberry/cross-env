@@ -12,8 +12,8 @@
   },
   "description": "Run scripts that set and use environment variables across platforms",
   "devDependencies": {
-    "@babel/core": "7.21.0",
-    "@babel/eslint-parser": "7.19.1",
+    "@babel/core": "7.21.3",
+    "@babel/eslint-parser": "7.21.3",
     "@babel/eslint-plugin": "7.19.1",
     "@babel/preset-env": "7.20.2",
     "@gemunion/eslint-config": "2.0.7",
