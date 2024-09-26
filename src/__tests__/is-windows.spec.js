@@ -1,6 +1,5 @@
 const isWindows = require("../is-windows");
 
-
 const {
   platform,
   env: {OSTYPE},

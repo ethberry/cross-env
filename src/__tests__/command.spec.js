@@ -1,7 +1,6 @@
 const isWindowsMock = require("../is-windows");
 const commandConvert = require("../command");
 
-
 jest.mock("../is-windows");
 
 const env = {
@@ -9,7 +8,6 @@ const env = {
   test1: "b",
   test2: "c",
   test3: "d",
-  // eslint-disable-next-line camelcase
   empty_var: "",
 };
 
@@ -48,7 +46,6 @@ test("converts embedded unix-style env variables usage for windows", () => {
   expect(commandConvert("$test1/$test2/$test3", env)).toBe("%test1%/%test2%/%test3%");
 });
 
-// eslint-disable-next-line max-len
 test("leaves embedded variables unchanged when using correct operating system", () => {
   isWindowsMock.mockReturnValue(false);
   expect(commandConvert("$test1/$test2/$test3", env)).toBe("$test1/$test2/$test3");
@@ -56,7 +53,6 @@ test("leaves embedded variables unchanged when using correct operating system", 
 
 test("converts braced unix-style env variable usage for windows", () => {
   isWindowsMock.mockReturnValue(true);
-  // eslint-disable-next-line no-template-curly-in-string
   expect(commandConvert("${test}", env)).toBe("%test%");
 });
 

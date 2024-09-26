@@ -1,12 +1,10 @@
 const crossSpawnMock = require("cross-spawn");
 const isWindowsMock = require("../is-windows");
 
-
 jest.mock("../is-windows");
 jest.mock("cross-spawn");
 
 const crossEnv = require("../");
-
 
 const getSpawned = (call = 0) => crossSpawnMock.spawn.mock.results[call].value;
 
@@ -52,11 +50,11 @@ test("handles single-quoted strings", () => {
 });
 
 test("handles double-quoted strings", () => {
-  testEnvSetting({FOO_ENV: "bar env"}, "FOO_ENV=\"bar env\"");
+  testEnvSetting({FOO_ENV: "bar env"}, 'FOO_ENV="bar env"');
 });
 
 test("handles equality signs in quoted strings", () => {
-  testEnvSetting({FOO_ENV: "foo=bar"}, "FOO_ENV=\"foo=bar\"");
+  testEnvSetting({FOO_ENV: "foo=bar"}, 'FOO_ENV="foo=bar"');
 });
 
 test("handles empty single-quoted strings", () => {
@@ -64,7 +62,7 @@ test("handles empty single-quoted strings", () => {
 });
 
 test("handles empty double-quoted strings", () => {
-  testEnvSetting({FOO_ENV: ""}, "FOO_ENV=\"\"");
+  testEnvSetting({FOO_ENV: ""}, 'FOO_ENV=""');
 });
 
 test("handles no value after the equals sign", () => {
@@ -118,7 +116,7 @@ test("does not normalize command arguments on windows", () => {
 });
 
 test("propagates kill signals", () => {
-  testEnvSetting({FOO_ENV: "foo=bar"}, "FOO_ENV=\"foo=bar\"");
+  testEnvSetting({FOO_ENV: "foo=bar"}, 'FOO_ENV="foo=bar"');
 
   process.emit("SIGTERM");
   process.emit("SIGINT");
@@ -141,7 +139,7 @@ test("keeps backslashes", () => {
 });
 
 test("propagates unhandled exit signal", () => {
-  const {spawned} = testEnvSetting({FOO_ENV: "foo=bar"}, "FOO_ENV=\"foo=bar\"");
+  const {spawned} = testEnvSetting({FOO_ENV: "foo=bar"}, 'FOO_ENV="foo=bar"');
   const spawnExitCallback = spawned.on.mock.calls[0][1];
   const spawnExitCode = null;
   spawnExitCallback(spawnExitCode);
@@ -149,7 +147,7 @@ test("propagates unhandled exit signal", () => {
 });
 
 test("exits cleanly with SIGINT with a null exit code", () => {
-  const {spawned} = testEnvSetting({FOO_ENV: "foo=bar"}, "FOO_ENV=\"foo=bar\"");
+  const {spawned} = testEnvSetting({FOO_ENV: "foo=bar"}, 'FOO_ENV="foo=bar"');
   const spawnExitCallback = spawned.on.mock.calls[0][1];
   const spawnExitCode = null;
   const spawnExitSignal = "SIGINT";
@@ -158,7 +156,7 @@ test("exits cleanly with SIGINT with a null exit code", () => {
 });
 
 test("propagates regular exit code", () => {
-  const {spawned} = testEnvSetting({FOO_ENV: "foo=bar"}, "FOO_ENV=\"foo=bar\"");
+  const {spawned} = testEnvSetting({FOO_ENV: "foo=bar"}, 'FOO_ENV="foo=bar"');
   const spawnExitCallback = spawned.on.mock.calls[0][1];
   const spawnExitCode = 0;
   spawnExitCallback(spawnExitCode);

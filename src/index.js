@@ -2,7 +2,6 @@ const {spawn} = require("cross-spawn");
 const commandConvert = require("./command");
 const varValueConvert = require("./variable");
 
-
 module.exports = crossEnv;
 
 const envSetterRegex = /(\w+)=('(.*)'|"(.*)"|(.*))/;
@@ -33,7 +32,7 @@ function crossEnv(args, options = {}) {
       if (crossEnvExitCode === null) {
         crossEnvExitCode = signal === "SIGINT" ? 0 : 1;
       }
-      process.exit(crossEnvExitCode); // eslint-disable-line no-process-exit
+      process.exit(crossEnvExitCode); // eslint-disable-line n/no-process-exit
     });
     return proc;
   }

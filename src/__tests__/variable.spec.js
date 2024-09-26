@@ -1,10 +1,9 @@
 const isWindowsMock = require("../is-windows");
 const varValueConvert = require("../variable");
 
-
 jest.mock("../is-windows");
 
-const JSON_VALUE = "{\\\"foo\\\":\\\"bar\\\"}";
+const JSON_VALUE = '{\\"foo\\":\\"bar\\"}';
 
 beforeEach(() => {
   process.env.VAR1 = "value1";
@@ -77,7 +76,6 @@ test("resolves an env variable value", () => {
 
 test("resolves an env variable value with curly syntax", () => {
   isWindowsMock.mockReturnValue(true);
-  // eslint-disable-next-line no-template-curly-in-string
   expect(varValueConvert("foo-${VAR1}")).toBe("foo-value1");
 });
 
@@ -93,13 +91,11 @@ test("resolves an env variable value for non-existant variable", () => {
 
 test("resolves a default env variable value -", () => {
   isWindowsMock.mockReturnValue(true);
-  // eslint-disable-next-line no-template-curly-in-string
   expect(varValueConvert("${foo:-test}")).toBe("test");
 });
 
 test("resolves a default env variable value =", () => {
   isWindowsMock.mockReturnValue(true);
-  // eslint-disable-next-line no-template-curly-in-string
   expect(varValueConvert("${foo:=test}")).toBe("test");
 });
 
