@@ -5,7 +5,7 @@
     "cross-env-shell": "src/bin/cross-env-shell.js"
   },
   "bugs": {
-    "url": "https://github.com/GemunIon/cross-env/issues"
+    "url": "https://github.com/ethberry/cross-env/issues"
   },
   "dependencies": {
     "cross-spawn": "7.0.3"
@@ -28,7 +28,7 @@
     "src",
     "!__tests__"
   ],
-  "homepage": "https://github.com/GemunIonStudio/cross-env#readme",
+  "homepage": "https://github.com/ethberry/cross-env#readme",
   "keywords": [
     "cross-environment",
     "environment variable",
@@ -36,13 +36,13 @@
   ],
   "license": "MIT",
   "main": "src/index.js",
-  "name": "@gemunion/cross-env",
+  "name": "@ethberry/cross-env",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GemunIon/cross-env.git"
+    "url": "git+https://github.com/ethberry/cross-env.git"
   },
   "scripts": {
     "build": "exit 0",
