@@ -45,6 +45,7 @@
     "url": "https://github.com/GemunIon/cross-env.git"
   },
   "scripts": {
+    "build": "exit 0",
     "lint": "eslint . --fix",
     "prettier": "prettier . --write",
     "test": "jest --config jest.config.json",
