@@ -12,8 +12,8 @@
   },
   "description": "Run scripts that set and use environment variables across platforms",
   "devDependencies": {
-    "@babel/eslint-parser": "7.25.7",
-    "@babel/preset-env": "7.25.7",
+    "@babel/eslint-parser": "7.25.8",
+    "@babel/preset-env": "7.25.8",
     "@ethberry/eslint-config": "5.0.4",
     "husky": "4.3.8",
     "jest": "29.7.0",
