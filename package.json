@@ -14,7 +14,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.28.0",
     "@babel/preset-env": "7.28.0",
-    "@ethberry/eslint-config": "5.0.5",
+    "@ethberry/eslint-config": "5.0.7",
     "husky": "9.1.7",
     "jest": "30.0.5",
     "lint-staged": "16.1.2",
