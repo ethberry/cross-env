@@ -1,6 +1,6 @@
 {
   "extends": ["github>ethberry/renovate-config"],
-  "baseBranchPatterns": ["master"],
+  "baseBranchPatterns": ["main"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
